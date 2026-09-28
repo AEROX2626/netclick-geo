@@ -12,6 +12,7 @@ export default function Home() {
       setIsScrolled(window.scrollY > 20);
     };
 
+    handleScroll(); // Check initial state
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -312,7 +313,7 @@ export default function Home() {
               העתיד כבר כאן. <span className="text-gradient">וכך נכבוש אותו יחד.</span>
             </h2>
             <p className="text-lg text-gray-600">
-              נוכחות במנועי בינה מלאכותית דורשת הרבה יותר מ"קידום אתרים" מסורתי. בנטקליק דיגיטל יצרנו מתודולוגיה מוכחת
+              נוכחות במנועי בינה מלאכותית דורשת הרבה יותר מ&quot;קידום אתרים&quot; מסורתי. בנטקליק דיגיטל יצרנו מתודולוגיה מוכחת
               המשלבת תוכן עומק סמכותי, יחסי ציבור דיגיטליים (Digital PR) וארכיטקטורת נתונים טכנית מתקדמת.
             </p>
           </div>
@@ -560,7 +561,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start gap-3">
                   <i className="fas fa-check text-green-500 mt-1"></i>
-                  <span className="text-gray-700">דו"ח תוצאות רבעוני</span>
+                  <span className="text-gray-700">דו&quot;ח תוצאות רבעוני</span>
                 </li>
               </ul>
               <a
@@ -673,7 +674,7 @@ export default function Home() {
 
           <div className="text-center mt-12 mb-4">
             <span className="inline-block bg-white border border-gray-200 text-gray-500 px-8 py-3 rounded-full text-sm font-bold shadow-sm">
-              <i className="fas fa-info-circle mr-2 text-mv-primary"></i> כל המחירים אינם כוללים מע"מ
+              <i className="fas fa-info-circle mr-2 text-mv-primary"></i> כל המחירים אינם כוללים מע&quot;מ
             </span>
           </div>
         </div>
@@ -876,7 +877,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3">
                   <i className="fas fa-check text-green-400"></i>
-                  <span>זיהוי 'Quick Wins' ויצירת אסטרטגיית חדירה</span>
+                  <span>זיהוי &apos;Quick Wins&apos; ויצירת אסטרטגיית חדירה</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <i className="fas fa-check text-green-400"></i>
@@ -950,7 +951,7 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">דוא"ל *</label>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">דוא&quot;ל *</label>
                     <input
                       type="email"
                       required
